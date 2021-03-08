@@ -1,8 +1,9 @@
 package fr.epsi.alecaplain.mspr_gostyle.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class ShopPromotion {
+public class ShopPromotion implements Serializable {
     private Integer id;
     private Promotion promotion;
     private Shop shop;

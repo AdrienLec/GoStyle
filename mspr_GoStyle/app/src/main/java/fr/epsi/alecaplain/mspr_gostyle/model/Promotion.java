@@ -1,9 +1,10 @@
 package fr.epsi.alecaplain.mspr_gostyle.model;
 
+import java.io.Serializable;
 import java.sql.Blob;
 import java.util.List;
 
-public class Promotion {
+public class Promotion implements Serializable {
 
     private Integer id;
     private String name;

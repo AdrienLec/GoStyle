@@ -40,10 +40,6 @@
         "source": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout_qrcode_layout.xml.flat",
-        "source": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\src\\main\\res\\layout\\qrcode_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
@@ -106,6 +102,10 @@
     {
         "merged": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_promotion.xml.flat",
         "source": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\src\\main\\res\\layout\\item_promotion.xml"
+    },
+    {
+        "merged": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_qrcode.xml.flat",
+        "source": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\src\\main\\res\\layout\\activity_qrcode.xml"
     },
     {
         "merged": "C:\\Users\\moysa\\AndroidStudioProjects\\GoStyle\\mspr_GoStyle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo.png.flat",

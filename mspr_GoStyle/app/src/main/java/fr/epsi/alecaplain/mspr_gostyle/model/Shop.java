@@ -1,9 +1,10 @@
 package fr.epsi.alecaplain.mspr_gostyle.model;
 
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Shop {
+public class Shop implements Serializable {
     private Integer id;
     private String name;
     private String adress;
