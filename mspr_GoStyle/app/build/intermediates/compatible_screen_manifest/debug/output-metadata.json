@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "COMPATIBLE_SCREEN_MANIFEST",
+    "kind": "Directory"
+  },
+  "applicationId": "fr.epsi.alecaplain.mspr_gostyle",
+  "variantName": "debug",
+  "elements": []
+}

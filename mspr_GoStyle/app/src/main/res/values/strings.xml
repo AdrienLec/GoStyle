@@ -1,10 +1,10 @@
 <resources>
-    <string name="titre_app">MSPR GoStyle</string>
+    <string name="app_name">GoStyle</string>
     <string name="login">SE CONNTECTER</string>
-    <string name="inscription">S'INSCRIRE</string>
+    <string name="inscription">S\'INSCRIRE</string>
     <string name="deco">SE DECONNECTER</string>
-    <string name="description">Bienvenue sur l'application</string>
-    <string name="userName">Entrez le nom d'utilisateur</string>
+    <string name="description">Bienvenue sur l\'application</string>
+    <string name="userName">Entrez le nom d\'utilisateur</string>
     <string name="password">Entrez le mot de passe</string>
     <string name="form_connexion">Formulaire de connexion</string>
     <string name="form_connexion_Regi">Veuillez saisir vos informations</string>
@@ -13,7 +13,7 @@
     <string name="form_masc">Masculin</string>
     <string name="form_femin">Féminin</string>
     <string name="form_other">Autre</string>
-    <string name="form_birthday">Date d'anniversaire</string>
+    <string name="form_birthday">Date d\'anniversaire</string>
     <string name="form_email">E-mail</string>
     <string name="form_adress">Entrez le nom de votre rue</string>
     <string name="form_cp">Code Postale</string>
@@ -23,4 +23,7 @@
     <string name="welcome">Bienvenue {{user.name}}</string>
     <string name="qrcode">Scanner un QRCode</string>
     <string name="back">Retour</string>
+    <string name="logo_description">Logo de l\'application</string>
+    <string name="category">Catégorie :</string>
+    <string name="codeAdvantage">Code :</string>
 </resources>

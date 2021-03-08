@@ -1,12 +1,23 @@
 package fr.epsi.alecaplain.mspr_gostyle.model;
 
 
+import java.util.List;
+
 public class Shop {
     private Integer id;
     private String name;
     private String adress;
     private Integer postalCode;
     private String city;
+    private List<ShopPromotion> shopPromotions;
+
+    public List<ShopPromotion> getShopPromotions() {
+        return shopPromotions;
+    }
+
+    public void setShopPromotions(List<ShopPromotion> shopPromotions) {
+        this.shopPromotions = shopPromotions;
+    }
 
     public Integer getId() {
         return id;

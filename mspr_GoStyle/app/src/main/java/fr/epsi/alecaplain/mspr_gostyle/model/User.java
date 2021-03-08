@@ -1,6 +1,7 @@
 package fr.epsi.alecaplain.mspr_gostyle.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class User {
 
@@ -13,6 +14,16 @@ public class User {
     private Integer postalCode;
     private String city;
     private String role;
+    private Shop shop;
+    private List<ShopPromotion> shopPromotions;
+
+    public List<ShopPromotion> getShopPromotions() {
+        return shopPromotions;
+    }
+
+    public void setShopPromotions(List<ShopPromotion> shopPromotions) {
+        this.shopPromotions = shopPromotions;
+    }
 
     public Integer getId() {
         return id;
@@ -86,6 +97,14 @@ public class User {
         this.role = role;
     }
 
+    public Shop getShop() {
+        return shop;
+    }
+
+    public void setShop(Shop shop) {
+        this.shop = shop;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -98,6 +117,7 @@ public class User {
                 ", postalCode=" + postalCode +
                 ", city='" + city + '\'' +
                 ", role='" + role + '\'' +
+                ", shop=" + shop +
                 '}';
     }
 }

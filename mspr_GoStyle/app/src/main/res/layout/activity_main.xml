@@ -6,21 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvListPromo"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="20px"
-        android:layout_marginRight="20px"
-        android:layout_marginTop="30px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Ll_Info_App"
-        app:layout_constraintVertical_bias="0.0">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
     <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -28,26 +13,59 @@
             android:background="@color/purple_700"
             android:elevation="4dp"
             android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:title="@string/titre_app">
+            app:layout_constraintTop_toTopOf="parent">
 
-            <Button
-                android:id="@+id/login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/login"
-                android:textSize="12sp"
-                android:layout_margin="5px"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnMainLogin"
+                    android:text="@string/app_name"
+                    android:gravity="center_vertical"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btnMainLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="3dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btnMainInscription"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
-            <Button
-                android:id="@+id/inscription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/inscription"
-                android:textSize="12sp"
-                android:layout_margin="5px"/>
+                <Button
+                    android:id="@+id/btnMainInscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inscription"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvMainMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toStartOf="@+id/btnMainDeconnecter"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnMainDeconnecter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deco"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="3dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
@@ -59,31 +77,42 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewMainLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20px"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"
-            tools:srcCompat="@tools:sample/avatars"/>
+            android:layout_margin="10dp"
+            tools:srcCompat="@mipmap/logo"
+            android:contentDescription="@string/logo_description" />
 
-        <TextView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/description"
-            android:layout_margin="20px"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.845"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.029" />
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:text="@string/description"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btnMainQrCode"/>
 
+            <Button
+                android:id="@+id/btnMainQrCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qrcode"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
-
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMainListPromo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Ll_Info_App"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

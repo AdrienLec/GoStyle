@@ -1,6 +1,7 @@
 package fr.epsi.alecaplain.mspr_gostyle.model;
 
 import java.sql.Blob;
+import java.util.List;
 
 public class Promotion {
 
@@ -10,6 +11,24 @@ public class Promotion {
     private String type;
     private String codeAdvantage;
     private Blob picture;
+    private Category category;
+    private List<ShopPromotion> shopPromotions;
+
+    public List<ShopPromotion> getShopPromotions() {
+        return shopPromotions;
+    }
+
+    public void setShopPromotions(List<ShopPromotion> shopPromotions) {
+        this.shopPromotions = shopPromotions;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
     public Integer getId() {
         return id;
@@ -68,6 +87,7 @@ public class Promotion {
                 ", type='" + type + '\'' +
                 ", codeAdvantage='" + codeAdvantage + '\'' +
                 ", picture=" + picture +
+                ", category=" + category +
                 '}';
     }
 }

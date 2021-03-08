@@ -1,0 +1,18 @@
+fr/epsi/alecaplain/mspr_gostyle/adapter/PromotionAdapter.java
+ fr.epsi.alecaplain.mspr_gostyle.adapter.PromotionAdapter
+fr/epsi/alecaplain/mspr_gostyle/BuildConfig.java
+ fr.epsi.alecaplain.mspr_gostyle.BuildConfig
+fr/epsi/alecaplain/mspr_gostyle/model/Promotion.java
+ fr.epsi.alecaplain.mspr_gostyle.model.Promotion
+fr/epsi/alecaplain/mspr_gostyle/MainActivity.java
+ fr.epsi.alecaplain.mspr_gostyle.MainActivity
+fr/epsi/alecaplain/mspr_gostyle/model/Shop.java
+ fr.epsi.alecaplain.mspr_gostyle.model.Shop
+fr/epsi/alecaplain/mspr_gostyle/model/Category.java
+ fr.epsi.alecaplain.mspr_gostyle.model.Category
+fr/epsi/alecaplain/mspr_gostyle/model/User.java
+ fr.epsi.alecaplain.mspr_gostyle.model.User
+fr/epsi/alecaplain/mspr_gostyle/model/ShopPromotion.java
+ fr.epsi.alecaplain.mspr_gostyle.model.ShopPromotion
+fr/epsi/alecaplain/mspr_gostyle/holder/PromotionHolder.java
+ fr.epsi.alecaplain.mspr_gostyle.holder.PromotionHolder
