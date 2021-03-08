@@ -1,7 +1,6 @@
 package fr.epsi.alecaplain.mspr_gostyle;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -20,38 +17,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/welcome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center_vertical"/>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/welcome"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="19dp" />
-
-        <Button
-            android:id="@+id/deco"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/deco"
-            android:textSize="12sp"
-            android:layout_margin="5px"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
+            <Button
+                android:id="@+id/deco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deco"
+                android:textSize="12sp"
+                android:layout_margin="5sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <LinearLayout
-        android:orientation="vertical"
+
+
+    <SurfaceView
+        android:id="@+id/surfaceViewCamera"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        tools:ignore="MissingConstraints">
-
-
-        <SurfaceView android:id="@+id/surfaceViewCamera"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"></SurfaceView>
-
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnQRCodeBack"

@@ -87,12 +87,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if(this.btnMainInscription.equals(v)) {
         } else if(this.btnMainDeconnecter.equals(v)) {
         } else if(this.btnMainQrCode.equals(v)) {
-            Intent intent = new Intent(MainActivity.this, QRCodeActivity.class);
-            ArrayList<Promotion> a = new ArrayList<Promotion>(this.promotions);
             Bundle bundle = new Bundle();
             bundle.putSerializable("promotions", (Serializable) this.promotions);
-            intent.putExtra("listPromotion", bundle);
-            this.startActivity(intent);
+            this.startActivity(new Intent(MainActivity.this, QRCodeActivity.class).putExtra("listPromotion", bundle));
         }
     }
 }
