@@ -31,6 +31,8 @@
             </intent-filter>
         </activity>
         <activity android:name="fr.epsi.alecaplain.mspr_gostyle.QRCodeActivity" />
+        <activity android:name="fr.epsi.alecaplain.mspr_gostyle.LoginActivity" />
+        <activity android:name="fr.epsi.alecaplain.mspr_gostyle.RegisterActivity" />
     </application>
 
 </manifest>

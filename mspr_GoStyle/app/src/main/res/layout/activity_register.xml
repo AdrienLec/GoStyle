@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -21,22 +18,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:title="@string/app_name">
 
-        <ImageView
-            android:id="@+id/iV_Logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20px"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"
-            tools:srcCompat="@tools:sample/avatars"
-            android:scaleType="fitEnd"/>
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:id="@+id/tVMsgForm"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:text="@string/form_connexion_Regi"
         android:gravity="center"
@@ -79,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_margin="2px"
+            android:layout_margin="2dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -103,8 +91,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="@string/form_other" />
-        </RadioGroup>
 
+        </RadioGroup>
 
         <EditText
             android:id="@+id/editTextDate"
@@ -112,17 +100,19 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="date"
-            android:text="@string/form_birthday"/>
+            android:hint="@string/form_birthday"
+            android:importantForAutofill="no"
+            android:inputType="date" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:importantForAutofill="no"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:text="@string/form_email"/>
+            android:hint="@string/form_email"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName"
@@ -131,9 +121,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/form_adress" />
-
-
+            android:importantForAutofill="no"
+            android:hint="@string/form_adress" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -145,19 +134,19 @@
                 android:id="@+id/editTextTextPostalAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPostalAddress"
-                android:text="@string/form_cp"/>
+                android:importantForAutofill="no"
+                android:hint="@string/form_cp"/>
 
             <EditText
                 android:id="@+id/editTextTextPersonName2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/form_ville" />
+                android:importantForAutofill="no"
+                android:hint="@string/form_ville" />
         </LinearLayout>
 
         <TextView
@@ -174,7 +163,9 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:inputType="textPassword"
-            app:layout_constraintRight_toLeftOf="parent"/>
+            app:layout_constraintRight_toLeftOf="parent"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
 
         <TextView
             android:id="@+id/tVpassword2"
@@ -190,7 +181,9 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:inputType="textPassword"
-            app:layout_constraintRight_toLeftOf="parent"/>
+            app:layout_constraintRight_toLeftOf="parent"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
 
         <Button
             android:id="@+id/login"
@@ -199,7 +192,7 @@
             android:text="@string/inscription"
             android:textSize="12sp"
             android:layout_marginTop="10dp"
-            android:layout_margin="5px"/>
+            android:layout_margin="5dp"/>
 
     </LinearLayout>
 

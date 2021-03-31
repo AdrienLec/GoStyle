@@ -4,17 +4,21 @@ fr/epsi/alecaplain/mspr_gostyle/BuildConfig.java
  fr.epsi.alecaplain.mspr_gostyle.BuildConfig
 fr/epsi/alecaplain/mspr_gostyle/model/Promotion.java
  fr.epsi.alecaplain.mspr_gostyle.model.Promotion
-fr/epsi/alecaplain/mspr_gostyle/MainActivity.java
- fr.epsi.alecaplain.mspr_gostyle.MainActivity
+fr/epsi/alecaplain/mspr_gostyle/QRCodeActivity.java
+ fr.epsi.alecaplain.mspr_gostyle.QRCodeActivity
 fr/epsi/alecaplain/mspr_gostyle/model/Shop.java
  fr.epsi.alecaplain.mspr_gostyle.model.Shop
+fr/epsi/alecaplain/mspr_gostyle/holder/PromotionHolder.java
+ fr.epsi.alecaplain.mspr_gostyle.holder.PromotionHolder
 fr/epsi/alecaplain/mspr_gostyle/model/Category.java
  fr.epsi.alecaplain.mspr_gostyle.model.Category
 fr/epsi/alecaplain/mspr_gostyle/model/User.java
  fr.epsi.alecaplain.mspr_gostyle.model.User
 fr/epsi/alecaplain/mspr_gostyle/model/ShopPromotion.java
  fr.epsi.alecaplain.mspr_gostyle.model.ShopPromotion
-fr/epsi/alecaplain/mspr_gostyle/holder/PromotionHolder.java
- fr.epsi.alecaplain.mspr_gostyle.holder.PromotionHolder
-fr/epsi/alecaplain/mspr_gostyle/QRCodeActivity.java
- fr.epsi.alecaplain.mspr_gostyle.QRCodeActivity
+fr/epsi/alecaplain/mspr_gostyle/LoginActivity.java
+ fr.epsi.alecaplain.mspr_gostyle.LoginActivity
+fr/epsi/alecaplain/mspr_gostyle/MainActivity.java
+ fr.epsi.alecaplain.mspr_gostyle.MainActivity
+fr/epsi/alecaplain/mspr_gostyle/RegisterActivity.java
+ fr.epsi.alecaplain.mspr_gostyle.RegisterActivity

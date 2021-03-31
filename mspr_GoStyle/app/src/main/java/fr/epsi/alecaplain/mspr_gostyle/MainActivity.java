@@ -84,7 +84,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 this.promotionHolderVisible = null;
             }
         } else if(this.btnMainLogin.equals(v)) {
+            this.startActivity(new Intent(MainActivity.this, LoginActivity.class));
         } else if(this.btnMainInscription.equals(v)) {
+            this.startActivity(new Intent(MainActivity.this, RegisterActivity.class));
         } else if(this.btnMainDeconnecter.equals(v)) {
         } else if(this.btnMainQrCode.equals(v)) {
             Bundle bundle = new Bundle();
